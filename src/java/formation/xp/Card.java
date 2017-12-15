@@ -1,5 +1,9 @@
 public class Card 
     { 
+		
+		  private mySuit mysuit;
+	      private myValue myvalue;
+	      
       private enum myValue{
     	  Deux,
     	  Trois,
@@ -20,15 +24,21 @@ public class Card
     	  Pique,
     	  Carreaux,
     	  Coeur    	  
-      };
-      
-      private mySuit mysuit;
-      private myValue myvalue;
-     
+      };     
 
-      public Card( int suit, int value ) 
+      public Card( int value, int suit ) 
       { 
-        this.myvalue = myvalue.values()[value]; 
-        this.mysuit = mysuit.values()[suit];
+        this.myvalue = myValue.values()[value]; 
+        this.mysuit = mySuit.values()[suit];
       }  
+      
+      public void printCard(){
+    	  System.out.print(this.myvalue);
+    	  System.out.print(", ");
+    	  System.out.println(this.mysuit);    	  
+      }
+      
+  	
     } 
+   
+   
