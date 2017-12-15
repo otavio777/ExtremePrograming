@@ -3,7 +3,7 @@ public class Card
       private enum myValue{
     	  Deux,
     	  Trois,
-    	  Quattre,
+    	  Quatre,
     	  Cinq,
     	  Six,
     	  Sept,
