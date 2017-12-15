@@ -1,8 +1,5 @@
 public class Card 
     { 
-      private enum mySuit;
-      private enum myValue;
-      
       private enum myValue{
     	  Deux,
     	  Trois,
@@ -24,11 +21,14 @@ public class Card
     	  Carreaux,
     	  Coeur    	  
       };
+      
+      private mySuit mysuit;
+      private myValue myvalue;
      
 
       public Card( int suit, int value ) 
       { 
-        this.myValue = myValue.values()[value]; 
-        this.mySuit = mySuit.values()[suit];
+        this.myvalue = myvalue.values()[value]; 
+        this.mysuit = mysuit.values()[suit];
       }  
     } 
