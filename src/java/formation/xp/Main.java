@@ -3,7 +3,5 @@ public class Main {
 		NewGame newgame = new NewGame();
 		Paquet mPaquet = new Paquet();
 		newgame.Start(mPaquet);
-		
-		
 	}
 }

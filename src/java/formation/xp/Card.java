@@ -34,7 +34,7 @@ public class Card
       
       public void printCard(){
     	  System.out.print(this.myvalue);
-    	  System.out.print(", ");
+    	  System.out.print(" de ");
     	  System.out.println(this.mysuit);    	  
       }
       

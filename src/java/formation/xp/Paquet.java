@@ -26,6 +26,5 @@ public class Paquet {
 	
 	int getSize(){
 		return Tarot.size();
-		
 	}
 }
