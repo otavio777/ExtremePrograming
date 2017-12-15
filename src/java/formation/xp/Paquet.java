@@ -7,7 +7,5 @@ public class Paquet {
 				Tarot.add(new Card(i,j) );
 			}
 		}
-	}
-	
-	
+	}	
 }

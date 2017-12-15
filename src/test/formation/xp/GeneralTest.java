@@ -7,6 +7,7 @@ import junit.framework.TestCase;
 public class GeneralTest extends TestCase {
 	@Test
 	public void test() {
-		// TODO
+		newgame = new NewGame();
+		newgame.Start();
 	}
 }
