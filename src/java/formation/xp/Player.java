@@ -1,43 +1,45 @@
+import java.util.ArrayList;
+
 public class Player {
 	private String Name;
-	private List<Card> Main;
+	private ArrayList<Card> Main;
 	private int Argent;
 	
 	public Player(){
 		this.Name = "toto";
-		this.Main = new List<Card>();
-		this.argent = 0;
+		this.Main = new ArrayList<Card>();
+		this.Argent = 0;
 		
 	}
 	
 	public Player(String name){
 		this.Name = name;
-		this.Main = new List<Card>();
-		this.argent = 0;
+		this.Main = new ArrayList<Card>();
+		this.Argent = 0;
 		
 	}
 	
-	String private getName(){
+	String getName(){
 		return this.Name;
 	}
 	
-	List<Card> private getMain(){
+	ArrayList<Card> getMain(){
 		return this.Main;
 	}
 	
-	int private getArgent(){
+	int getArgent(){
 		return this.Argent;
 	}
 	
-	void private setName(String name){
+	void setName(String name){
 		this.Name = name;
 	}
 	
-	void private setMain(List<Card> main){
+	void setMain(ArrayList<Card> main){
 		this.Main = main;
 	}
 	
-	void private setArgent(int argent){
+	void setArgent(int argent){
 		this.Argent = argent;
 	}
 	

@@ -1,6 +1,7 @@
+import java.util.Scanner;
 
 public class NewGame {
-	private Player Joueur1;
+	Player Joueur1;
 	private Player Joueur2;
 	private Player Joueur3;
 	private Player Joueur4;
@@ -12,11 +13,10 @@ public class NewGame {
 		this.Joueur4 = new Player("ordi3");
 	}
 	
-	void private Start(){
+	void Start(){
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Choisir un nom jouer:");
-		int mName = keyboard.nextString();
-		Scanner keyboard = new Scanner(System.in);
+		String mName = keyboard.nextLine();
 		System.out.println("Choisir une somme pour jouer:");
 		int mArgent = keyboard.nextInt();
 		this.Joueur1.setName(mName);
