@@ -43,8 +43,8 @@ public class Player {
 		this.Name = name;
 	}
 	
-	void setMain(Hand main){
-		this.Main = main;
+	void setMain(int num, ArrayList<Card> main){
+		this.Main = new Hand(num, main);
 	}
 	
 	void setArgent(int argent){
@@ -87,7 +87,6 @@ public class Player {
 	
 	void printMain(){
 		for (int i=0; i<this.Main.getNumber(); i++){
-			System.out.println(i);
 			this.Main.cards.get(i).printCard();
 		}
 		

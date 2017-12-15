@@ -11,6 +11,11 @@ public class Hand {
 		this.cards = new ArrayList<Card>();
 		this.number = 0;
 	}
+	public Hand(int num, ArrayList<Card> card){
+		this.cards = card;
+		this.number = num;
+	}
+	
 	
 	public ArrayList<Card> getCards() {
 		 

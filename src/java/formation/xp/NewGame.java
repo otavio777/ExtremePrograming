@@ -17,8 +17,6 @@ public class NewGame {
 			argentTable=0;
 		}
 		public void init_hand(Paquet p, Player j){
-			j.Main.setNumber(2);
-			 
 			int indiceRand =(int)( Math.random()*p.getSize());
 			 ArrayList<Card> cards=new ArrayList<Card>();
 			 cards.add(p.getTarot().get(indiceRand));
@@ -28,6 +26,7 @@ public class NewGame {
 			 cards.add(p.getTarot().get(indiceRand));
 			 p.getTarot().remove(indiceRand);
 			 p.setTarot(p.getTarot());
+			 j.setMain(2, cards);
 		}
 		
 		void  Start(Paquet mPaquet){
@@ -43,6 +42,7 @@ public class NewGame {
 			this.Joueur4.setArgent(mArgent);
 			
 			init_hand(mPaquet, Joueur1);
+			System.out.println("Cartes en main");
 			Joueur1.printMain();
 			if (this.Joueur1.getName()!=mName){
 				System.out.println("Erreur dans setName");
